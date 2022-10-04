@@ -13,6 +13,8 @@
         <module>gateway-service</module>
         <module>discovery-service</module>
         <module>config-service</module>
+        <module>purchase-service</module>
+        <module>product-service</module>
     </modules>
 
     <parent>

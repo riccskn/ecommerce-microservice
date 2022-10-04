@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "api/v1/accounts")
+@RequestMapping(value = "/accounts")
 public class AccountController {
 
     @Autowired

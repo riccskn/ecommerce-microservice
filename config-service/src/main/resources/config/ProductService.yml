@@ -1,0 +1,20 @@
+server:
+  port: 9009
+postgres:
+  host: ${POSTGRES_HOST:localhost:5432}
+
+spring:
+  jpa:
+    generate-ddl: true
+  datasource:
+    url: jdbc:postgresql://${postgres.host}/dbproducts
+    username: postgres
+    password: root
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

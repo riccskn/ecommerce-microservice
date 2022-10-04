@@ -4,6 +4,11 @@ spring:
   cloud:
     gateway:
       discovery.locator.enabled: true
+      routes:
+        - id: account-service
+          uri: http://localhost:9000/
+          predicates:
+            - Path= /accounts/*
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
   gateway:
